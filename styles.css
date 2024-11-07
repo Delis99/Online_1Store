@@ -1,0 +1,191 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.8em;
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="text"],
+input[type="number"] {
+    margin-top: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Update Stock Section */
+.update-stock input {
+    width: calc(50% - 10px);
+    margin-right: 10px;
+}
+
+.update-stock button {
+    width: 100%;
+}
+
+/* Search Section */
+.search-container {
+    display: flex;
+}
+
+.search-container input[type="text"] {
+    flex: 1;
+}
+
+.search-container button {
+    margin-left: 10px;
+    padding: 8px;
+}
+
+/* Inventory Table */
+.inventory {
+    width: 100%;
+    max-width: 800px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+td .edit-btn,
+td .delete-btn,
+td .buy-btn {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+td .edit-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td .delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+td .buy-btn {
+    background-color: #ff9800;
+    color: white;
+}
+
+td .edit-btn:hover {
+    background-color: #45a049;
+}
+
+td .delete-btn:hover {
+    background-color: #e53935;
+}
+
+td .buy-btn:hover {
+    background-color: #fb8c00;
+}
+
+/* Highlighted Search Result */
+table tr[style*="background-color: yellow"] {
+    background-color: yellow !important; /* Ensures the search highlight is visible */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    section {
+        width: 90%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    button {
+        font-size: 0.9em;
+    }
+}
